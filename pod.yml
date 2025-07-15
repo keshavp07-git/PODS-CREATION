@@ -1,0 +1,14 @@
+apiVersion: v1 # This is the API version for the Pod specification
+# The kind of resource being defined
+kind: Pod # This is the kind of resource, which is a Pod
+metadata: # Metadata for the Pod
+  name: vproapp # Name of the Pod
+  labels: # Labels for the Pod
+    app: vproapp # Label to identify the application
+spec: # Specification for the Pod
+  containers: # List of containers in the Pod
+    - name: appcontainer # Name of the container
+      image: keshavp07/nanoimg:v1 # Docker image to use for the container
+      ports: # Ports to expose from the container
+        - name: vproapp-port  # Name of the port
+          containerPort: 8080 # Port number to expose
