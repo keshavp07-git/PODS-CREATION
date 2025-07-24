@@ -62,7 +62,8 @@ ssh-keygen
 ## 7. Next Steps
 
 - When you will try to create pod file using command:
-```sh kubectl create -f pod.yaml
+```
+sh kubectl create -f pod.yaml
 ```
 - Face an error like: Localhost: Unable to connect to the server: dial tcp
 - **Solution:** Ensure you have created a kOps cluster and configured your `kubectl` context to point to it.
